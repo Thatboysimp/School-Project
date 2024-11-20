@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CTU-Buddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #c71111;
+            color: white;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #c71111;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .home-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #c71111;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                width: 60px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .home-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="CTU-Buddy Logo">
+        <h1>CTU-Buddy</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="discussion.html">Discussion</a></li>
+                <li><a href="share_resources.html">Share Resources</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="students.jpg" alt="CTU-Buddy Image" class="home-image">
+        <h2>Welcome to CTU-Buddy!</h2>
+        <p>Greetings from CTU-Buddy, the best study partner available to City Technical University students. With its user-friendly platform, CTU-Buddy aims to improve your educational experience by facilitating easy timetable management, peer engagement, resource sharing, and academic community engagement.</p>
+        <p>Examine the many tools we provide—such as interactive timetables and discussion boards—to see how CTU-Buddy might help you succeed academically. Come hang out with us today and enjoy your time at university!</p>
+        <video width="600" controls>
+            <source src="CTU  The Vibe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 - CTU Buddy Development Team. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

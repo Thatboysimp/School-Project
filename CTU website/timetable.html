@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - CTU-Buddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #c71111;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #c71111;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #c71111;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #c71111;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #c71111;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 18px;
+            }
+
+            header img {
+                width: 70px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="CTU-Buddy Logo">
+        <h1>Timetable</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="share_resources.html">Share Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td>Math</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                    <td>Biology</td>
+                    <td>Computer Science</td>
+                </tr>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>History</td>
+                    <td>Geography</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Chemistry</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>PE</td>
+                    <td>Biology</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>History</td>
+                    <td>Computer Science</td>
+                    <td>Geography</td>
+                    <td>Math</td>
+                    <td>Chemistry</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00</td>
+                    <td colspan="5">Lunch</td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00</td>
+                    <td>Physics</td>
+                    <td>Biology</td>
+                    <td>Computer Science</td>
+                    <td>English</td>
+                    <td>History</td>
+                </tr>
+                <tr>
+                    <td>2:00 - 3:00</td>
+                    <td>PE</td>
+                    <td>Geography</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                    <td>English</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - CTU Buddy Development Team. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
